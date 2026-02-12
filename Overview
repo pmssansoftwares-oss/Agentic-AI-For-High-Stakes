@@ -1,0 +1,42 @@
+Product Portfolio: Agentic AI for High-Stakes Voice Workflows
+Author: PM (AI/SaaS Solutions)
+Tech Stack: Vapi Squads, Multi-Agent Orchestration, CRM/API Integration
+
+1. Executive Summary
+Traditional Voice AI fails in high-stress sectors like Roadside Assistance (RSA) and Insurance because it prioritizes data collection over human safety. This case study documents a "Zero-Interrogation" framework that uses specialized AI agents to handle crises with empathy while maintaining technical efficiency.
+
+2. The Use Cases
+A. Fire/Emergency Insurance Claim
+The Workflow: A multi-agent squad where Agent 1 screens the intent and Agent 2 handles the crisis.
+
+Policy Bypass: If a fire is detected, the system ignores policy status (even if dead) to offer immediate help, protecting the brand's long-term image.
+
+Action: Automated hotel booking and empathy-first consolation.
+
+B. RSA (Roadside Assistance)
+Priority 1: "Are you safe?" – Immediate safety check before any data entry.
+
+Data Capture: Automatic secondary number request and landmark identification.
+
+Result: "Excellent" output rating with minimal friction.
+
+3. The "Empathy Engine" Logic
+Unlike standard IVRs, this system uses Prosody-Aware Intervention:
+
+Scenario: If the user speaks slowly or sounds nervous.
+
+Response: AI interrupts its own logic to say: "Sir, please don't worry, aaram se bataiye, mai hoon yaha".
+
+Impact: Reduces user panic and improves STT (Speech-to-Text) accuracy.
+
+4. Technical Orchestration (Vapi Squads)
+Zero-Interrogation: Uses Caller ID (ANI) to fetch CRM data instantly, removing the need for 16-digit policy verification.
+
+Squad Handoff: Moves from Screener to Specialist with a ~1.2s manageable latency.
+
+Context Preservation: Every detail (Name, Intent, Sentiment) is passed between agents via shared state management.
+
+5. Human-In-The-Loop (HITL) Strategy
+Trigger: If the safety check is "No" or the situation is too complex for AI, the call is escalated.
+
+Warm Handoff: The human agent receives a full JSON summary of the case, ensuring the customer doesn't have to repeat a single word.
