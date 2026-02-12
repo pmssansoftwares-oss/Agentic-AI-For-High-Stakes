@@ -1,0 +1,45 @@
+Technical Spec: AI-to-AI Handoff (Fire & Crisis Use Case)
+Scenario: Customer calling in panic due to a Fire emergency.
+Architecture: Vapi Squad (Multi-Agent)
+
+1. Agent 1: The First Responder (Screener)
+Role: Intent Detection & Identity Verification (Passive).
+
+System Prompt Logic:
+
+Caller ID check karke seedha naam se greet karna: "Hello [Name], I hope you are safe."
+
+Intent Trigger: Agar user "Aag" (Fire) ya "Emergency" bolta hai, toh bina kisi aur sawal ke Squad_Transfer trigger karna.
+
+Handoff Payload:
+
+customer_name: [Value]
+
+detected_intent: "Fire_Emergency"
+
+user_sentiment: "Panic/High"
+
+2. The Handoff Mechanism (The 1.2s Bridge)
+Context Injection: Handoff ke waqt Agent 2 ko pichli saari summary mil jati hai.
+
+Transition Filler: Agent 1 transfer karte waqt bolta hai: "I am connecting you to our Emergency Crisis Specialist immediately, please stay on the line."
+
+3. Agent 2: The Crisis Specialist (Empathy & Action)
+Role: Situation Handling, Consolation, and Service Booking.
+
+System Prompt Logic (The "Mai Hoon Yaha" Factor):
+
+Empathy First: "Mr. [Name], mujhe pata chala aag lagi hai. Please ghabraiye mat, mai hoon yaha aapki madad ke liye. Sabse pehle bataiye, kya aap aur aapki family safe hain?"
+
+Brand Integrity: Agar policy expired bhi hai, toh bhi assistance offer karni hai: "Aapki policy status abhi secondary hai, pehle aapki safety aur rehne ka intezam karte hain."
+
+Tools & Action:
+
+Hotel_Booking_API: Turant aas-paas ke hotel search karke book karna.
+
+Emergency_Services_Alert: Fire station ya Ambulance ko coordinates bhejna.
+
+4. Final Handoff: Human-in-the-Loop (HITL)
+Agar hotel booking mein issue aaye ya user ko "Human Touch" chahiye, toh Agent 2 call transfer karta hai.
+
+Summary for Human Agent: "User [Name] reporting fire at [Location]. Safety check done. Hotel booking in progress. Please finalize the claim."
