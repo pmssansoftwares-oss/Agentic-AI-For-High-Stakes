@@ -1,0 +1,12 @@
+{
+  "users": [
+    { "id": 1, "email": "admin@example.com", "password": "admin123" }
+  ],
+  "agents": [],
+  "tools": [
+    { "id": 1, "name": "Gmail", "connected": false },
+    { "id": 2, "name": "Calendar", "connected": false },
+    { "id": 3, "name": "Google Sheets", "connected": false }
+  ],
+  "logs": []
+}
